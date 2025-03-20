@@ -24,6 +24,7 @@ body {
     background-color: var(--principal);
     max-width: 1900px;
     font-family:geral ;
+    
 }
 
 .menu{
@@ -52,8 +53,18 @@ body {
     width: 105px;
 }
 
+.botoesDoMenu > a:hover{
+    transition: 0.5s ease-in-out;
+    color: rgba(255, 255, 255, 0.548);
+}
+
 #imgMenu{
     margin-right: 6px;
+}
+
+#imgMenu:hover{
+    transition: 0.5s ease-in-out;
+    opacity: 0.5;
 }
 
 .botaoDoPerfil{
@@ -205,6 +216,7 @@ hr{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
 }
+
 
 #aindaEstou{
     padding: 0px 120px;
