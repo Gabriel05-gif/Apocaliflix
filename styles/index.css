@@ -1,0 +1,631 @@
+:root{
+    --principal: #270133;
+    --menu: #130119;
+    --sinopse: #d5c3c1;
+}
+
+@font-face {
+    font-family:'logo' ;
+    src: url(/assets/fonte/Germania_One/GermaniaOne-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'geral' ;
+    src:url(/assets/fonte/Geologica/Geologica-VariableFont_CRSV\,SHRP\,slnt\,wght.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0 auto;
+    background-color: var(--principal);
+    max-width: 1900px;
+    font-family:geral ;
+}
+
+.menu{
+    background-color: var(--menu);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    height: 60px;
+}
+
+.botoesDoMenu{
+    font-size: 25px;
+    position: relative;
+    display: flex;
+    gap: 35px;
+    grid-column-start:3;
+}
+
+.botoesDoMenu > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    width: 105px;
+}
+
+#imgMenu{
+    margin-right: 6px;
+}
+
+.botaoDoPerfil{
+    position: relative;
+    display: flex;
+    width: 100px;
+    padding-left: 40px;
+    align-items: center;
+    grid-column-start: 5;
+}
+
+hr{
+    position: absolute;
+    width: 105px;
+    top: 30px;
+    right: 283px;
+}
+
+#lupa > img{
+    position: absolute;
+    width: 30px;
+    left: 15px;
+    top: 6px;
+    opacity: 0.5;
+
+}
+
+#lupa > img:hover{
+    transition: 0.5s ease-in-out;
+    opacity: 5;
+}
+
+.botaoDoPerfil > h2{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.402);
+    padding: 6px 50px;
+    background-color: #2a0336;
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+    
+}
+
+#botaoPerfil{
+    position: absolute;
+    left: 260px;
+}
+
+.botaoDoPerfil > h2:hover{
+    background-color: rgba(255, 255, 255, 0.254);
+    transition: 0.5s ease-in-out;
+    color: white;
+}
+
+#perfil{
+    position: absolute;
+    top: -32px;
+    left: 290px ;
+}
+.filmeDestaque{
+    position: relative;
+}
+
+.filmeDestaque > img{
+    width: 1900px;  
+    object-fit: cover; 
+    object-position: center;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);
+}
+#logoDescricao{
+    position: absolute;
+    top: 250px;
+    padding: 30px;
+    font-size: 40px;
+    font-family: logo;
+    color: white;
+    font-weight: normal;
+}
+
+#originalDescricao{
+    position: absolute;
+    color: white;
+    top: 288px;
+    left: 165px;
+    padding: 30px;
+}
+
+#tituloDescricao{
+    position: absolute;
+    color: white;
+    padding: 30px;
+    top: 305px;
+    font-size: 40px;
+}
+
+#lancamento{
+    position: absolute;
+    color: white;
+    padding: 30px;
+    top: 375px;
+
+}
+
+#classificacao{
+    position: absolute;
+    width: 27px;
+    top: 424px;
+    left: 85px;
+
+}
+
+#sinopse{
+    position: absolute;
+    top: 390px;
+    color: #ffffffc5;
+    padding: 30px;
+    font-size: 30px;
+    width: 1100px;
+}
+
+#irFilme{
+    position: absolute;
+    top: 630px;
+    left: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: #ffffff46;
+    border-radius: 16px;
+    padding: 15px 35px;
+    font-size: 35px;
+    align-self: center;
+    font-weight: bold;
+}
+
+#irFilme:hover{
+    background-color: #270133;
+    transition: 0.5s ease-in-out;
+
+}
+
+#top3{
+    font-size: 60px;
+    margin: 0;
+    padding: 30px 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.top{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+#aindaEstou{
+    padding: 0px 120px;
+    position: relative;
+}
+
+#harley{
+    padding: 0px 120px;
+    position: relative;
+}
+
+#origemG{
+    padding: 0px 58px;
+    position: relative;
+}
+#aindaEstou h1{
+    margin: 0;
+    position: absolute;
+    color: white;
+    font-size: 210px;
+    font-weight: bold;
+    left: 52px;
+}
+
+#aindaEstou > img{
+    width: 420px;
+    position: relative;
+}
+
+#aindaEstou h2{
+    margin: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 35px;
+}
+
+#harley h1{
+    margin: 0;
+    position: absolute;
+    color: white;
+    font-size: 210px;
+    font-weight: bold;
+    left: 40px;
+}
+
+#harley > img{
+    width: 420px;
+    position: relative;
+}
+
+#harley h2{
+    margin: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 35px;
+}
+
+#origemG h1{
+    margin: 0;
+    position: absolute;
+    color: white;
+    font-size: 210px;
+    font-weight: bold;
+    left: -20px;
+}
+
+#origemG > img{
+    width: 420px;
+    position: relative;
+}
+
+#origemG h2{
+    margin: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 35px;
+}
+
+.filmesRecentes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#moana{
+    padding: 0px 120px;
+    position: relative;
+}
+
+
+#moana h1{
+    margin: 0;
+    position: absolute;
+    color: white;
+    font-size: 210px;
+    font-weight: bold;
+    top: 0px;
+    left: 52px;
+}
+
+#moana > img{
+    width: 225px;
+    height: 210px;
+    position: relative;
+    border-radius: 10px;
+    object-fit: cover; 
+    object-position: center;
+}
+
+#moana h2{
+    margin: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+
+
+#sherek{
+    padding: 0px 70px;
+    position: relative;
+}
+
+#sherek h1{
+    margin: 0;
+    position: absolute;
+    color: white;
+    font-size: 210px;
+    font-weight: bold;
+    left: -20px;
+    top: -0px;
+}
+
+#sherek > img{
+    width: 225px;
+    height: 210px;
+    position: relative;
+    border-radius: 10px;
+    object-fit: cover; 
+    object-position: center;
+}
+
+#sherek h2{
+    margin: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+#aves{
+    padding: 0px 70px;
+    position: relative;
+}
+
+#aves h1{
+    margin: 0;
+    position: absolute;
+    color: white;
+    font-size: 210px;
+    font-weight: bold;
+    left: -20px;
+    top: -0px;
+}
+
+#aves > img{
+    width: 225px;
+    height: 210px;
+    position: relative;
+    border-radius: 10px;
+    object-fit: cover; 
+    object-position: center;
+}
+
+#aves h2{
+    margin: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+#matrix{
+    padding: 0px 70px;
+    position: relative;
+}
+
+#matrix h1{
+    margin: 0;
+    position: absolute;
+    color: white;
+    font-size: 210px;
+    font-weight: bold;
+    left: -20px;
+    top: -0px;
+}
+
+#matrix > img{
+    width: 225px;
+    height: 210px;
+    position: relative;
+    border-radius: 10px;
+    object-fit: cover; 
+    object-position: center;
+}
+
+#matrix h2{
+    margin: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+#jogos{
+    padding: 0px 58px;
+    position: relative;
+}
+
+#jogos h1{
+    margin: 0;
+    position: absolute;
+    color: white;
+    font-size: 210px;
+    font-weight: bold;
+    left: -20px;
+    top: -0px;
+}
+
+#jogos > img{
+    width: 225px;
+    height: 210px;
+    position: relative;
+    border-radius: 10px;
+    object-fit: cover; 
+    object-position: center;
+}
+
+#jogos h2{
+    margin: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+#seta{
+    position: absolute;
+    top: 1500px;
+    right: -0px;
+}
+
+#seta2{
+    position: absolute;
+    top: 1885px;
+    right: -0px;
+}
+.seriesRecentes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#aQueda{
+    padding: 0px 120px;
+    position: relative;
+}
+
+
+#aQueda h1{
+    margin: 0;
+    position: absolute;
+    color: white;
+    font-size: 210px;
+    font-weight: bold;
+    top: -0px;
+    left: 52px;
+}
+
+#aQueda > img{
+    width: 225px;
+    height: 210px;
+    position: relative;
+    border-radius: 10px;
+    object-fit: cover; 
+    object-position: center;
+}
+
+#aQueda h2{
+    margin: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+
+
+#dexter{
+    padding: 0px 70px;
+    position: relative;
+}
+
+#dexter h1{
+    margin: 0;
+    position: absolute;
+    color: white;
+    font-size: 210px;
+    font-weight: bold;
+    left: -20px;
+    top: -0px;
+}
+
+#dexter > img{
+    width: 225px;
+    height: 210px;
+    position: relative;
+    border-radius: 10px;
+    object-fit: cover; 
+    object-position: center;
+}
+
+#dexter h2{
+    margin: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+#friends{
+    padding: 0px 70px;
+    position: relative;
+}
+
+#friends h1{
+    margin: 0;
+    position: absolute;
+    color: white;
+    font-size: 210px;
+    font-weight: bold;
+    left: -20px;
+    top: -0px;
+}
+
+#friends > img{
+    width: 225px;
+    height: 210px;
+    position: relative;
+    border-radius: 10px;
+    object-fit: cover; 
+    object-position: center;
+}
+
+#friends h2{
+    margin: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+#theO{
+    padding: 0px 70px;
+    position: relative;
+}
+
+#theO h1{
+    margin: 0;
+    position: absolute;
+    color: white;
+    font-size: 210px;
+    font-weight: bold;
+    left: -20px;
+    top: -0px;
+}
+
+#theO > img{
+    width: 225px;
+    height: 210px;
+    position: relative;
+    border-radius: 10px;
+    object-fit: cover; 
+    object-position: center;
+}
+
+#theO h2{
+    margin: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+#jovem{
+    padding: 0px 58px;
+    position: relative;
+}
+
+#jovem h1{
+    margin: 0;
+    position: absolute;
+    color: white;
+    font-size: 210px;
+    font-weight: bold;
+    left: -20px;
+    top: -0px;
+}
+
+#jovem > img{
+    width: 225px;
+    height: 210px;
+    position: relative;
+    border-radius: 10px;
+    object-fit: cover; 
+    object-position: center;
+}
+
+#jovem h2{
+    margin: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 40px;
+    background-color: #130119;
+    color: white;
+    font-size: 25px
+}
