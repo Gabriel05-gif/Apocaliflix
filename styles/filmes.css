@@ -201,7 +201,7 @@ hr{
     color: white;
 }
 
-.grid {
+.main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
@@ -211,10 +211,28 @@ hr{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
 .imagens {
     width: 400px;
     height: 400px;
     border-radius: 10px;
+}
+
+.filmes p {
+    margin: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 40px;
+    background-color: #130119;
+    color: white;
+    font-size: 25px
 }
