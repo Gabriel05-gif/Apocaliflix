@@ -131,7 +131,7 @@ hr{
     width: 1900px;  
     object-fit: cover; 
     object-position: center;
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);
+    --webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);
 }
 #logoDescricao{
     position: absolute;
@@ -216,7 +216,6 @@ hr{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
 }
-
 
 #aindaEstou{
     padding: 0px 120px;
@@ -305,7 +304,6 @@ hr{
     position: relative;
 }
 
-
 #moana h1{
     margin: 0;
     position: absolute;
@@ -331,8 +329,6 @@ hr{
     font-weight: normal;
     font-size: 25px;
 }
-
-
 
 #sherek{
     padding: 0px 70px;
@@ -479,7 +475,6 @@ hr{
     position: relative;
 }
 
-
 #aQueda h1{
     margin: 0;
     position: absolute;
@@ -505,8 +500,6 @@ hr{
     font-weight: normal;
     font-size: 25px;
 }
-
-
 
 #dexter{
     padding: 0px 70px;
