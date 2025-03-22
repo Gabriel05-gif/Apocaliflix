@@ -32,7 +32,7 @@ body {
     background-color: var(--principal);
     max-width: 1900px;
     font-family:geral;
-    animation: fadeIn 0.3s ease-in forwards;
+    animation: 0.3s ease-in forwards;
     
 }
 
@@ -159,9 +159,7 @@ input::placeholder{
 }
 
 .filmeDestaque > img{
-    width: 1900px;  
-    object-fit: cover; 
-    object-position: center;
+    width: 1900px;
     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);
 }
 #logoDescricao{
@@ -248,6 +246,12 @@ input::placeholder{
     grid-template-columns: 1fr 1fr 1fr ;
 }
 
+.filmesTop > a{
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+
+}
+
 .filmesTop > img{
     transition: transform 0.3s ease-in-out;
 }
@@ -285,7 +289,11 @@ input::placeholder{
 .filmesRecentes{
     display: grid;
     position: relative;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.filmesRec > a{
+    text-decoration: none;
 }
 
 .filmesRec > img{
@@ -308,13 +316,13 @@ input::placeholder{
     color: white;
     font-size: 210px;
     font-weight: bold;
-    top: 0px;
+    top: -30px;
     left: 40px;
 }
 
 .filmesRec  img{
-    width: 225px;
-    height: 210px;
+    width: 176px;
+    height: 180px;
     position: relative;
     border-radius: 10px;
     object-fit: cover; 
@@ -328,29 +336,28 @@ input::placeholder{
     font-size: 25px;
 }
 
-#seta{
+.seta img{
     position: absolute;
-    top: 60px;
-    right: 0px;
+    width: 20px;
+    top: 77px;
+    left: 1875px;
 }
 
 .seriesRecentes{
     display: grid;
     position: relative;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.seriesRec > img{
-    transition: transform 0.3s ease-in-out;
-}
-
-.seriesRec > img:hover{
-    transform: scale(1.05);
+.seriesRec > a{
+    text-decoration: none;
 }
 
 .seriesRec{
-    padding:0px 20px 0px 110px;
+    padding:0px 0px 0px 110px;
     position: relative;
+    width: 175px;
+    height: 220px;
 }
 
 
@@ -360,16 +367,15 @@ input::placeholder{
     color: white;
     font-size: 210px;
     font-weight: bold;
-    top: -0px;
+    top: -30px;
     left: 40px;
 }
 
 .seriesRec  img{
-    width: 225px;
-    height: 210px;
+    width: 176px;
+    height: 180px;
     position: relative;
     border-radius: 10px;
-    object-fit: cover; 
     object-position: center;
 }
 
@@ -378,6 +384,14 @@ input::placeholder{
     color: white;
     font-weight: normal;
     font-size: 25px;
+}
+
+.animacao > img{
+    transition: transform 0.3s ease-in-out;
+}
+
+.animacao > img:hover{
+    transform: scale(1.10);
 }
 
 footer{
