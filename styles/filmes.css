@@ -90,23 +90,19 @@ hr{
     grid-column-start: 5;
 }
 
-.lupa{
+input{
     background-color: var(--principal);
     border: none;
-    padding: 10px 5px 10px;
+    padding: 10px 5px 10px 15px;
     border-radius: 23px;
     color: white;
-}
-
-input{
     font-family:geral;
     font-weight: bold;
     font-size: 18px;
 }
 
-input::placeholder{
+input::placeholder {
     color:#ffffff88;
-    padding-left: 20px;
 }
 
 .botaoDoPerfil > h2{
@@ -240,6 +236,36 @@ input::placeholder{
     text-decoration: none;
 }
 
+.filmes p {
+    margin: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+    justify-self: start;
+}
+
+.filmes div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    align-items: center;
+}
+
+.titulo-filme {
+    grid-column: 1/-1;
+    justify-content: space-between;
+    padding-left: 29px;
+}
+
+.descricao-filme {
+    padding-left: 29px;
+}
+
+span {
+    justify-self: end;
+    padding-right: 29px;
+}
+
 .imagens {
     width: 90%;
     height: 100%;
@@ -251,15 +277,6 @@ input::placeholder{
 
 .imagens:hover {
     transform: scale(1.05);
-}
-
-.filmes p {
-    margin: 0;
-    color: white;
-    font-weight: normal;
-    font-size: 30px;
-    justify-self: start;
-    padding-left: 29px;
 }
 
 .footer {

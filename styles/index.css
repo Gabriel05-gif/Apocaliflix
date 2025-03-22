@@ -105,25 +105,19 @@ hr{
     right: 283px;
 }
 
-.lupa{
+input{
     background-color: var(--principal);
     border: none;
-    padding: 10px 5px 10px;
+    padding: 10px 5px 10px 15px;
     border-radius: 23px;
     color: white;
-}
-
-input{
     font-family:geral;
     font-weight: bold;
     font-size: 18px;
 }
 
-input::placeholder{
-    display: flex;
+input::placeholder {
     color:#ffffff88;
-    padding-left: 20px;
-
 }
 
 
