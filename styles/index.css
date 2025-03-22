@@ -105,21 +105,26 @@ hr{
     right: 283px;
 }
 
-input{
+.lupa{
     background-color: var(--principal);
     border: none;
-    padding: 10px 5px 10px 15px;
+    padding: 10px 5px 10px;
     border-radius: 23px;
     color: white;
+}
+
+input{
     font-family:geral;
     font-weight: bold;
     font-size: 18px;
 }
 
-input::placeholder {
+input::placeholder{
+    display: flex;
     color:#ffffff88;
-}
+    padding-left: 20px;
 
+}
 
 .botaoDoPerfil > h2{
     position: absolute;
@@ -152,10 +157,11 @@ input::placeholder {
     position: relative;
 }
 
-.filmeDestaque > img{
+.filmeDestaque  img{
     width: 1900px;
     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);
 }
+
 #logoDescricao{
     position: absolute;
     top: 250px;
@@ -236,44 +242,47 @@ input::placeholder {
 }
 
 .top{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    display: flex;
+    gap: 210px;
+    justify-content: center;
 }
 
-.filmesTop > a{
+.filmesTop3 > a{
     text-decoration: none;
     transition: transform 0.3s ease-in-out;
 
 }
 
-.filmesTop > img{
+.filmesTop3  img{
+    position: relative;
     transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+    height: 208px;
+    width: 338px;
+    border-radius: 10px;
+
+
 }
 
-.filmesTop > img:hover{
+.filmesTop3 > img:hover{
     transform: scale(1.05);
 }
 
-.filmesTop{
-    padding: 0px 120px;
+.filmesTop3{
     position: relative;
 }
 
-.filmesTop h1{
-    margin: 0;
+.filmesTop3  h1{
     position: absolute;
+    margin: 0;
     color: white;
-    font-size: 210px;
+    font-size: 250px;
     font-weight: bold;
-    left: 52px;
+    top: -41px;
+    left: -80px;
 }
 
-.filmesTop img{
-    width: 420px;
-    position: relative;
-}
-
-.filmesTop h2{
+.filmesTop3 h2{
     margin: 0;
     color: white;
     font-weight: normal;
