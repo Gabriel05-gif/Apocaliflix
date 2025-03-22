@@ -36,7 +36,7 @@ body {
     height: 60px;
 }
 
-.botoesDoMenu{
+.container-botoes-menu{
     font-size: 25px;
     position: relative;
     display: flex;
@@ -44,15 +44,31 @@ body {
     grid-column-start:3;
 }
 
-.botoesDoMenu > a{
+.botoes-menu {
     text-decoration: none;
     color: white;
     font-weight: bold;
     width: 105px;
+    display: flex;
+    gap: 5px;
+    transition: transform 0.3s ease-in-out;
 }
 
-#imgMenu{
-    margin-right: 6px;
+.botoes-menu:hover {
+    transform: scale(1.1);
+}
+
+.icones-botoes {
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+}
+
+hr{
+    position: absolute;
+    width: 105px;
+    top: 30px;
+    right: 138px;
 }
 
 .botaoDoPerfil{
@@ -62,13 +78,6 @@ body {
     padding-left: 40px;
     align-items: center;
     grid-column-start: 5;
-}
-
-hr{
-    position: absolute;
-    width: 105px;
-    top: 30px;
-    right: 283px;
 }
 
 #lupa > img{
@@ -208,16 +217,24 @@ hr{
 }
 
 .filmes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 500px 1fr;
+    justify-items: center;
     gap: 10px;
+    text-decoration: none;
 }
 
 .imagens {
-    width: 400px;
-    height: 400px;
+    width: 90%;
+    height: 100%;
     border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagens:hover {
+    transform: scale(1.05);
 }
 
 .filmes p {
@@ -225,6 +242,8 @@ hr{
     color: white;
     font-weight: normal;
     font-size: 30px;
+    justify-self: start;
+    padding-left: 29px;
 }
 
 .footer {
