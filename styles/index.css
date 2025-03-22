@@ -23,7 +23,7 @@ body {
     margin: 0 auto;
     background-color: var(--principal);
     max-width: 1900px;
-    font-family:geral ;
+    font-family:geral;
     
 }
 
@@ -70,8 +70,6 @@ body {
 .botaoDoPerfil{
     position: relative;
     display: flex;
-    width: 100px;
-    padding-left: 40px;
     align-items: center;
     grid-column-start: 5;
 }
@@ -83,19 +81,33 @@ hr{
     right: 283px;
 }
 
-#lupa > img{
+.botaoDoPerfil > img{
     position: absolute;
-    width: 30px;
-    left: 15px;
+    width:25px;
+    left: 20px;
     top: 6px;
     opacity: 0.5;
-
 }
 
-#lupa > img:hover{
-    transition: 0.5s ease-in-out;
-    opacity: 5;
+.lupa{
+    background-color: var(--principal);
+    border: none;
+    padding: 7px;
+    border-radius: 23px;
+    color: white;
 }
+
+input{
+    font-family:geral;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input::placeholder{
+    color:#ffffff88;
+    padding-left: 10px;
+}
+
 
 .botaoDoPerfil > h2{
     position: absolute;
@@ -103,7 +115,7 @@ hr{
     padding: 6px 50px;
     background-color: #2a0336;
     border-radius: 30px;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
     
 }
 
@@ -120,7 +132,8 @@ hr{
 
 #perfil{
     position: absolute;
-    top: -32px;
+    width: 50px;
+    top: -8px;
     left: 290px ;
 }
 .filmeDestaque{
@@ -200,7 +213,7 @@ hr{
 
 #irFilme:hover{
     background-color: #270133;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 
 }
 
