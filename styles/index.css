@@ -18,12 +18,21 @@
     font-style: normal;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0.7;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 body {
     margin: 0 auto;
     background-color: var(--principal);
     max-width: 1900px;
     font-family:geral;
+    animation: fadeIn 0.3s ease-in forwards;
     
 }
 
@@ -38,13 +47,34 @@ body {
     height: 60px;
 }
 
-.botoesDoMenu{
+.container-botoes-menu{
     font-size: 25px;
     position: relative;
     display: flex;
     gap: 35px;
     grid-column-start:3;
 }
+
+.botoes-menu {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    width: 105px;
+    display: flex;
+    gap: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.botoes-menu:hover {
+    transform: scale(1.1);
+}
+
+.icones-botoes {
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+}
+
 
 .botoesDoMenu > a{
     text-decoration: none;
@@ -230,22 +260,20 @@ input::placeholder{
     grid-template-columns: 1fr 1fr 1fr ;
 }
 
+.filmesTop > img{
+    transition: transform 0.3s ease-in-out;
+}
 
-#aindaEstou{
+.filmesTop > img:hover{
+    transform: scale(1.05);
+}
+
+.filmesTop{
     padding: 0px 120px;
     position: relative;
 }
 
-#harley{
-    padding: 0px 120px;
-    position: relative;
-}
-
-#origemG{
-    padding: 0px 58px;
-    position: relative;
-}
-#aindaEstou h1{
+.filmesTop h1{
     margin: 0;
     position: absolute;
     color: white;
@@ -254,54 +282,12 @@ input::placeholder{
     left: 52px;
 }
 
-#aindaEstou > img{
+.filmesTop img{
     width: 420px;
     position: relative;
 }
 
-#aindaEstou h2{
-    margin: 0;
-    color: white;
-    font-weight: normal;
-    font-size: 35px;
-}
-
-#harley h1{
-    margin: 0;
-    position: absolute;
-    color: white;
-    font-size: 210px;
-    font-weight: bold;
-    left: 40px;
-}
-
-#harley > img{
-    width: 420px;
-    position: relative;
-}
-
-#harley h2{
-    margin: 0;
-    color: white;
-    font-weight: normal;
-    font-size: 35px;
-}
-
-#origemG h1{
-    margin: 0;
-    position: absolute;
-    color: white;
-    font-size: 210px;
-    font-weight: bold;
-    left: -20px;
-}
-
-#origemG > img{
-    width: 420px;
-    position: relative;
-}
-
-#origemG h2{
+.filmesTop h2{
     margin: 0;
     color: white;
     font-weight: normal;
@@ -310,26 +296,35 @@ input::placeholder{
 
 .filmesRecentes{
     display: grid;
+    position: relative;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-#moana{
-    padding: 0px 120px;
+.filmesRec > img{
+    transition: transform 0.3s ease-in-out;
+}
+
+.filmesRec > img:hover{
+    transform: scale(1.05);
+}
+
+.filmesRec{
+    padding:0px 20px 0px 110px;
     position: relative;
 }
 
 
-#moana h1{
+.filmesRec h1{
     margin: 0;
     position: absolute;
     color: white;
     font-size: 210px;
     font-weight: bold;
     top: 0px;
-    left: 52px;
+    left: 40px;
 }
 
-#moana > img{
+.filmesRec  img{
     width: 225px;
     height: 210px;
     position: relative;
@@ -338,133 +333,7 @@ input::placeholder{
     object-position: center;
 }
 
-#moana h2{
-    margin: 0;
-    color: white;
-    font-weight: normal;
-    font-size: 25px;
-}
-
-
-
-#sherek{
-    padding: 0px 70px;
-    position: relative;
-}
-
-#sherek h1{
-    margin: 0;
-    position: absolute;
-    color: white;
-    font-size: 210px;
-    font-weight: bold;
-    left: -20px;
-    top: -0px;
-}
-
-#sherek > img{
-    width: 225px;
-    height: 210px;
-    position: relative;
-    border-radius: 10px;
-    object-fit: cover; 
-    object-position: center;
-}
-
-#sherek h2{
-    margin: 0;
-    color: white;
-    font-weight: normal;
-    font-size: 25px;
-}
-
-#aves{
-    padding: 0px 70px;
-    position: relative;
-}
-
-#aves h1{
-    margin: 0;
-    position: absolute;
-    color: white;
-    font-size: 210px;
-    font-weight: bold;
-    left: -20px;
-    top: -0px;
-}
-
-#aves > img{
-    width: 225px;
-    height: 210px;
-    position: relative;
-    border-radius: 10px;
-    object-fit: cover; 
-    object-position: center;
-}
-
-#aves h2{
-    margin: 0;
-    color: white;
-    font-weight: normal;
-    font-size: 25px;
-}
-
-#matrix{
-    padding: 0px 70px;
-    position: relative;
-}
-
-#matrix h1{
-    margin: 0;
-    position: absolute;
-    color: white;
-    font-size: 210px;
-    font-weight: bold;
-    left: -20px;
-    top: -0px;
-}
-
-#matrix > img{
-    width: 225px;
-    height: 210px;
-    position: relative;
-    border-radius: 10px;
-    object-fit: cover; 
-    object-position: center;
-}
-
-#matrix h2{
-    margin: 0;
-    color: white;
-    font-weight: normal;
-    font-size: 25px;
-}
-
-#jogos{
-    padding: 0px 58px;
-    position: relative;
-}
-
-#jogos h1{
-    margin: 0;
-    position: absolute;
-    color: white;
-    font-size: 210px;
-    font-weight: bold;
-    left: -20px;
-    top: -0px;
-}
-
-#jogos > img{
-    width: 225px;
-    height: 210px;
-    position: relative;
-    border-radius: 10px;
-    object-fit: cover; 
-    object-position: center;
-}
-
-#jogos h2{
+.filmesRec h2{
     margin: 0;
     color: white;
     font-weight: normal;
@@ -473,37 +342,41 @@ input::placeholder{
 
 #seta{
     position: absolute;
-    top: 1500px;
-    right: -0px;
+    top: 60px;
+    right: 0px;
 }
 
-#seta2{
-    position: absolute;
-    top: 1885px;
-    right: -0px;
-}
 .seriesRecentes{
     display: grid;
+    position: relative;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-#aQueda{
-    padding: 0px 120px;
+.seriesRec > img{
+    transition: transform 0.3s ease-in-out;
+}
+
+.seriesRec > img:hover{
+    transform: scale(1.05);
+}
+
+.seriesRec{
+    padding:0px 20px 0px 110px;
     position: relative;
 }
 
 
-#aQueda h1{
+.seriesRec h1{
     margin: 0;
     position: absolute;
     color: white;
     font-size: 210px;
     font-weight: bold;
     top: -0px;
-    left: 52px;
+    left: 40px;
 }
 
-#aQueda > img{
+.seriesRec  img{
     width: 225px;
     height: 210px;
     position: relative;
@@ -512,133 +385,7 @@ input::placeholder{
     object-position: center;
 }
 
-#aQueda h2{
-    margin: 0;
-    color: white;
-    font-weight: normal;
-    font-size: 25px;
-}
-
-
-
-#dexter{
-    padding: 0px 70px;
-    position: relative;
-}
-
-#dexter h1{
-    margin: 0;
-    position: absolute;
-    color: white;
-    font-size: 210px;
-    font-weight: bold;
-    left: -20px;
-    top: -0px;
-}
-
-#dexter > img{
-    width: 225px;
-    height: 210px;
-    position: relative;
-    border-radius: 10px;
-    object-fit: cover; 
-    object-position: center;
-}
-
-#dexter h2{
-    margin: 0;
-    color: white;
-    font-weight: normal;
-    font-size: 25px;
-}
-
-#friends{
-    padding: 0px 70px;
-    position: relative;
-}
-
-#friends h1{
-    margin: 0;
-    position: absolute;
-    color: white;
-    font-size: 210px;
-    font-weight: bold;
-    left: -20px;
-    top: -0px;
-}
-
-#friends > img{
-    width: 225px;
-    height: 210px;
-    position: relative;
-    border-radius: 10px;
-    object-fit: cover; 
-    object-position: center;
-}
-
-#friends h2{
-    margin: 0;
-    color: white;
-    font-weight: normal;
-    font-size: 25px;
-}
-
-#theO{
-    padding: 0px 70px;
-    position: relative;
-}
-
-#theO h1{
-    margin: 0;
-    position: absolute;
-    color: white;
-    font-size: 210px;
-    font-weight: bold;
-    left: -20px;
-    top: -0px;
-}
-
-#theO > img{
-    width: 225px;
-    height: 210px;
-    position: relative;
-    border-radius: 10px;
-    object-fit: cover; 
-    object-position: center;
-}
-
-#theO h2{
-    margin: 0;
-    color: white;
-    font-weight: normal;
-    font-size: 25px;
-}
-
-#jovem{
-    padding: 0px 58px;
-    position: relative;
-}
-
-#jovem h1{
-    margin: 0;
-    position: absolute;
-    color: white;
-    font-size: 210px;
-    font-weight: bold;
-    left: -20px;
-    top: -0px;
-}
-
-#jovem > img{
-    width: 225px;
-    height: 210px;
-    position: relative;
-    border-radius: 10px;
-    object-fit: cover; 
-    object-position: center;
-}
-
-#jovem h2{
+.seriesRec h2{
     margin: 0;
     color: white;
     font-weight: normal;
