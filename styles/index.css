@@ -257,8 +257,8 @@ input::placeholder{
     position: relative;
     transition: transform 0.3s ease-in-out;
     object-fit: cover;
-    height: 208px;
-    width: 338px;
+    height: 258px;
+    width: 420px;
     border-radius: 10px;
 
 
