@@ -88,18 +88,12 @@ body {
     color: rgba(255, 255, 255, 0.548);
 }
 
-#imgMenu{
-    margin-right: 6px;
-}
-
-#imgMenu:hover{
-    transition: 0.5s ease-in-out;
-    opacity: 0.5;
-}
 
 .botaoDoPerfil{
     position: relative;
     display: flex;
+    width: 100px;
+    padding-left: 20px;
     align-items: center;
     grid-column-start: 5;
 }
@@ -111,18 +105,10 @@ hr{
     right: 283px;
 }
 
-.botaoDoPerfil > img{
-    position: absolute;
-    width:25px;
-    left: 20px;
-    top: 6px;
-    opacity: 0.5;
-}
-
 .lupa{
     background-color: var(--principal);
     border: none;
-    padding: 7px;
+    padding: 10px 5px 10px;
     border-radius: 23px;
     color: white;
 }
@@ -134,8 +120,10 @@ input{
 }
 
 input::placeholder{
+    display: flex;
     color:#ffffff88;
-    padding-left: 10px;
+    padding-left: 20px;
+
 }
 
 
@@ -162,8 +150,8 @@ input::placeholder{
 
 #perfil{
     position: absolute;
-    width: 50px;
-    top: -8px;
+    width: 60px;
+    top: -13px;
     left: 290px ;
 }
 .filmeDestaque{
