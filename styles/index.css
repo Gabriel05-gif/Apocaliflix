@@ -118,7 +118,15 @@ hr{
     width: 20px;
     top: 77px;
     left: 1875px;
+    opacity: 0;
+    transition: opacity 100s ease-in-out;
 }
+
+.seta img:hover{
+    opacity: 1;
+
+}
+
 
 .seriesRecentes{
     display: grid;
