@@ -1,76 +1,4 @@
-:root{
-    --principal: #270133;
-    --menu: #130119;
-    --sinopse: #d5c3c1;
-}
-
-@font-face {
-    font-family:'logo' ;
-    src: url(/assets/fonte/Germania_One/GermaniaOne-Regular.ttf) format(truetype);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family:'geral' ;
-    src:url(/assets/fonte/Geologica/Geologica-VariableFont_CRSV\,SHRP\,slnt\,wght.ttf) format(truetype);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0.7;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-body {
-    margin: 0 auto;
-    background-color: var(--principal);
-    max-width: 1900px;
-    font-family:geral ;
-    animation: fadeIn 0.3s ease-in forwards
-}
-
-.menu{
-    background-color: var(--menu);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    align-items: center;
-    padding: 20px 0 20px 30px;
-    height: 60px;
-}
-
-.container-botoes-menu{
-    font-size: 25px;
-    position: relative;
-    display: flex;
-    gap: 35px;
-    grid-column-start:3;
-}
-
-.botoes-menu {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    width: 105px;
-    display: flex;
-    gap: 5px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.botoes-menu:hover {
-    transform: scale(1.1);
-}
-
-.icones-botoes {
-    height: 20px;
-    width: 20px;
-    margin-top: 5px;
-}
+@import url(global.css);
 
 hr{
     position: absolute;
@@ -79,145 +7,12 @@ hr{
     right: 138px;
 }
 
-.botaoDoPerfil{
-    position: relative;
-    display: flex;
-    width: 100px;
-    padding-left: 20px;
-    align-items: center;
-    grid-column-start: 5;
-}
-
-input{
-    background-color: var(--principal);
-    border: none;
-    padding: 10px 5px 10px 15px;
-    border-radius: 23px;
-    color: white;
-    font-family:geral;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-input::placeholder {
-    color:#ffffff88;
-}
-
-.botaoDoPerfil > h2{
-    position: absolute;
-    color: rgba(255, 255, 255, 0.402);
-    padding: 6px 50px;
-    background-color: #2a0336;
-    border-radius: 30px;
-    transition: 0.5s ease-in-out;
-    
-}
-
-#botaoPerfil{
-    position: absolute;
-    left: 260px;
-}
-
-.botaoDoPerfil > h2:hover{
-    background-color: rgba(255, 255, 255, 0.254);
-    transition: 0.5s ease-in-out;
-    color: white;
-}
-
-#perfil{
-    position: absolute;
-    width: 60px;
-    top: -13px;
-    left: 290px ;
-}
-
-.filmeDestaque{
-    position: relative;
-}
-
-.filmeDestaque > img{
-    width: 1900px;  
-    object-fit: cover; 
-    object-position: center;
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);
-}
-#logoDescricao{
-    position: absolute;
-    top: 250px;
-    padding: 30px;
-    font-size: 40px;
-    font-family: logo;
-    color: white;
-    font-weight: normal;
-}
-
-#originalDescricao{
-    position: absolute;
-    color: white;
-    top: 288px;
-    left: 165px;
-    padding: 30px;
-}
-
-#tituloDescricao{
-    position: absolute;
-    color: white;
-    padding: 30px;
-    top: 305px;
-    font-size: 40px;
-}
-
-#lancamento{
-    position: absolute;
-    color: white;
-    padding: 30px;
-    top: 375px;
-
-}
-
-#classificacao{
-    position: absolute;
-    width: 27px;
-    top: 424px;
-    left: 85px;
-
-}
-
-#sinopse{
-    position: absolute;
-    top: 390px;
-    color: #ffffffc5;
-    padding: 30px;
-    font-size: 30px;
-    width: 1100px;
-}
-
-#irFilme{
-    position: absolute;
-    top: 630px;
-    left: 30px;
-    text-decoration: none;
-    color: white;
-    background-color: #ffffff46;
-    border-radius: 16px;
-    padding: 15px 35px;
-    font-size: 35px;
-    align-self: center;
-    font-weight: bold;
-}
-
-#irFilme:hover{
-    background-color: #270133;
-    transition: 0.5s ease-in-out;
-
-}
-
 #subtitulo-filmes{
     font-size: 60px;
     margin: 0;
     padding: 30px 20px;
     font-weight: bold;
-    color: white;
+    color: var(--cor-texto);
 }
 
 .main {
@@ -236,7 +31,7 @@ input::placeholder {
 
 .filmes p {
     margin: 0;
-    color: white;
+    color: var(--cor-texto);
     font-weight: normal;
     font-size: 25px;
     justify-self: start;
@@ -274,14 +69,4 @@ span {
 
 .imagens:hover {
     transform: scale(1.05);
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    padding: 40px;
-    background-color: #130119;
-    color: white;
-    font-size: 25px
 }
