@@ -4,45 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apocaliflix</title>
-    <link rel="stylesheet" href="/styles/filmes.css">
+    <link rel="stylesheet" href="./styles/filmes.css">
 </head>
 <body>
     <div class="menu">
-
-        <a id="logo" href="/index.html"><img src="/assets/Apocaliflix_Logo.png"></a>
+        <a id="logo" href="./index.html"><img src="./assets/Apocaliflix_Logo.png"></a>
         
         <div class="container-botoes-menu">
             <hr>
-            <a class="botoes-menu" href="/index.html"><img class="icones-botoes" src="/assets/Botões/inicio.png" alt="">Início</a>
-            <a class="botoes-menu" href="/filmes.html"><img class="icones-botoes" src="/assets/Botões/filmes.png" alt="">Filmes</a>
-            <a class="botoes-menu" href="/series.html"><img class="icones-botoes" src="/assets/Botões/series.png" alt="">Séries</a>
+            <a class="botoes-menu" href="./index.html"><img class="icones-botoes" src="./assets/Botões/inicio.png" alt="">Início</a>
+            <a class="botoes-menu" href="./filmes.html"><img class="icones-botoes" src="./assets/Botões/filmes.png" alt="">Filmes</a>
+            <a class="botoes-menu" href="./series.html"><img class="icones-botoes" src="./assets/Botões/series.png" alt="">Séries</a>
         </div>
 
-        <div class="botaoDoPerfil">
+        <div id="container-input-perfil">
             <input type="text" placeholder="Procurar..."/>
-            <img id="botaoPerfil" src="/assets/Botões/perfil.png" alt="">
-            <img id="perfil" src="/assets/FotoDePerfil/NathalyZendaia.png" alt="">
+            <img id="botao-perfil" src="./assets/Botões/perfil.png" alt="">
+            <img id="perfil" src="./assets/FotoDePerfil/NathalyZendaia.png" alt="">
         </div>
-
     </div>
 
-    <div class="filmeDestaque">
-        
-        <img src="/assets/filmes/Ainda Estou Aqui(2).png" alt="">
+    <div id="filme-destaque">
+        <img src="./assets/filmes/Ainda Estou Aqui(2).png" alt="">
         <div>
+            <h3 id="descricao-logo">Apocaliflix</h3>
+            <h3 id="descricao-original">Original</h3>
+            <h2 id="descricao-titulo">Ainda Estou Aqui</h2>
+            <img id="descricao-classificacao" src="./assets/Botões/Classificação_Etária.png">
+            <h3 id="descricao-lancamento">Novo</h3>
+            
+            <p id="descricao-sinopse">No início da década de 1970, o Brasil enfrenta o endurecimento da ditadura militar. No Rio de Janeiro, a família Paiva - Rubens, Eunice e seus cinco filhos - vive à beira da praia em uma casa de portas abertas para os amigos. Vencedor do Oscar 2025, Melhor Filme Internacional</p>
 
-            <span class="descricao">
-                
-                <h3 id="logoDescricao">Apocaliflix</h3>
-                <h3 id="originalDescricao">Original</h3>
-                <h2 id="tituloDescricao">Ainda Estou Aqui</h2>
-                <img id="classificacao" src="/assets/Botões/Classificação_Etária.png">
-                <h3 id="lancamento">Novo</h3>
-            </span>
-
-            <p id="sinopse">No início da década de 1970, o Brasil enfrenta o endurecimento da ditadura militar. No Rio de Janeiro, a família Paiva - Rubens, Eunice e seus cinco filhos - vive à beira da praia em uma casa de portas abertas para os amigos. Vencedor do Oscar 2025, Melhor Filme Internacional</p>
-
-            <a id="irFilme" href="./comentarioFilme.html">Ir para o filme</a>
+            <a id="botao-ir-para-filme" href="./comentarioFilme.html">Ir para o filme</a>
         </div>
     </div>
 
