@@ -203,3 +203,13 @@ input::placeholder {
     background-color: var(--menu-footer);
     font-size: 15px
 }
+
+.footer a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    transition: 0.2s ease-in-out;
+}
+
+.footer a:hover{
+    color: #ffffffad;
+}
