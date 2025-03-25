@@ -5,160 +5,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apocaliflix</title>
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/global.css">
 </head>
 <body>
+
     <div class="menu">
-        <a id="logo" href="./index.html"><img src="./assets/Apocaliflix_Logo.png"></a>
+
+        <a class="logo" href="./index.html"><img src="assets/logotipo.svg"></a>
         
         <div class="container-botoes-menu">
             <hr>
-            <a class="botoes-menu" href="./index.html"><img class="icones-botoes" src="./assets/Botões/inicio.png" alt="">Início</a>
-            <a class="botoes-menu" href="./filmes.html"><img class="icones-botoes" src="./assets/Botões/filmes.png" alt="">Filmes</a>
-            <a class="botoes-menu" href="./series.html"><img class="icones-botoes" src="./assets/Botões/series.png" alt="">Séries</a>
+            <a class="botoes-menu" href="./index.html"><img class="icones-botoes" src="./assets/botoes/inicio.png" alt="">Início</a>
+            <a class="botoes-menu" href="./filmes.html"><img class="icones-botoes" src="./assets/botoes/filmes.png" alt="">Filmes</a>
+            <a class="botoes-menu" href="./series.html"><img class="icones-botoes" src="./assets/botoes/series.png" alt="">Séries</a>
         </div>
 
         <div id="container-input-perfil">
             <input type="text" placeholder="Procurar..."/>
-            <img id="botao-perfil" src="./assets/Botões/perfil.png" alt="">
-            <img id="perfil" src="./assets/FotoDePerfil/NathalyZendaia.png" alt="">
+            <img id="perfil" src="./assets/foto-do-perfil/nathaly-zendaya.png" alt="">
         </div>
+
     </div>
 
     <div id="filme-destaque">
-        <img src="./assets/filmes/Questao de tempo background.png" alt="">
-        <div>
-            <h3 id="descricao-logo">Apocaliflix</h3>
-            <h3 id="descricao-original">Original</h3>
-            <h2 id="descricao-titulo">Questão de tempo</h2>
-            <img id="descricao-classificacao" src="./assets/Botões/Classificação_Etária.png">
-            <h3 id="descricao-lancamento">Novo</h3>
-            
-            <p id="descricao-sinopse">Ao completar 21 anos, Tim descobre que os homens de sua família têm a capacidade de viajar no tempo. Ainda que não possa alterar o rumo da História, pode mudar os acontecimentos de sua vida. Assim, decide voltar alguns dias para arranjar uma namorada.</p>
 
+        <img src="./assets/filmes/header-questao-de-tempo.svg" alt="">
+        
+        <div>
+
+            <h3 id = "descricao-logo">Apocaliflix</h3>
+            <h3 id = "descricao-original">Original</h3>
+            <h2 id = "descricao-titulo">Questão de tempo</h2>
+            <img id = "descricao-classificacao" src="./assets/botoes/classificacao-dezesseis.png">
+            <h3 id = "descricao-lancamento">Novo</h3>
+            <p id = "descricao-sinopse">
+                Ao completar 21 anos, Tim descobre que os 
+                homens de sua família têm a capacidade de viajar no tempo. Ainda que 
+                não possa alterar o rumo da História, pode mudar os acontecimentos de sua vida. Assim, 
+                decide voltar alguns dias para arranjar uma namorada.
+            </p>
             <a id="botao-ir-para-filme" href="./comentarioFilme.html">Ir para o filme</a>
+
         </div>
+
     </div>
 
-    <h2 id="top3">Top 3</h2>
+    <h2 id="top">Top 3</h2>
 
     <div class="top">
 
-        <div class="filmesTop3">
+        <div class="filmes-top">
             <h1>1</h1>
-            <a class = "animacao" href=""><img src="/assets/filmes/Ainda Estou Aqui.png" alt=""></a>
-            <a href=""><h2>Ainda estou aqui</h2></a>
+            <a class = "animacao" href="/"><img src="/assets/filmes/top-ainda-estou-aqui.svg" alt=""></a>
+            <a href="/"><h2>Ainda Estou Aqui</h2></a>
 
         </div>
         
-        <div class="filmesTop3">
+        <div class="filmes-top">
             <h1>2</h1>
-            <a class = "animacao" href=""><img src="/assets/filmes/Harley Queen.png" alt=""></a>
-            <a href=""><h2>Harley Quinn</h2></a>
+            <a class = "animacao" href="/"><img src="/assets/series/top-harley-quinn.svg" alt=""></a>
+            <a href="/"><h2>Harley Quinn</h2></a>
        
         </div>
          
-        <div class="filmesTop3">
+        <div class="filmes-top">
             <h1>3</h1>
-            <a class = "animacao" href=""><img src="/assets/filmes/Guardiôes.png" alt=""></a>
-            <a href=""><h2>A Origem dos Guardiões</h2></a>
+            <a class = "animacao" href="/"><img src="/assets/filmes/top-origem-dos-guardioes.svg" alt=""></a>
+            <a href="/"><h2>A Origem dos Guardiões</h2></a>
 
         </div>
+
     </div>
 
-    <H2 id="top3">Filmes Recentes</H2>
+    <H2 id="top">Filmes Recentes</H2>
 
-    <div class="filmesRecentes">
+    <div class="filmes-recentes">
 
-
-        <div class="filmesRec">
+        <div class="filmes-rec">
             <h1>1</h1>
-            <a class = "animacao" href=""><img src="/assets/filmes/Moana.webp" alt=""></a>
-            <a href=""><h2>Moana</h2></a>
+            <a class = "animacao" href="/"><img src="/assets/filmes/moana-dois.svg" alt=""></a>
+            <a href="/"><h2>Moana 2</h2></a>
         </div>
         
-        <div class="filmesRec">
+        <div class="filmes-rec">
             <h1>2</h1>
-            <a class = "animacao" href=""><img src="/assets/filmes/Shereka.jpg" alt=""></a>
-            <a href=""><h2>Sherek 5</h2></a>
+            <a class = "animacao" href="/"><img src="/assets/filmes/chucky.svg" alt=""></a>
+            <a href="/"><h2>Chucky</h2></a>
         </div>
         
-        <div class="filmesRec">
+        <div class="filmes-rec">
             <h1>3</h1>
-            <a class = "animacao" href=""><img src="/assets/filmes/Aves de Rapina.jpg" alt=""></a>
-            <a href=""><h2>Aves de Rapina</h2></a>
+            <a class = "animacao" href="/"><img src="/assets/filmes/show-de-truman.svg" alt=""></a>
+            <a href="/"><h2>O Show de Truman</h2></a>
         </div>
 
-        <div class="filmesRec">
+        <div class="filmes-rec">
             <h1>4</h1>
-            <a class = "animacao" href=""><img src="/assets/filmes/Matrix.webp" alt=""></a>
-            <a href=""><h2>Matrix</h2></a>
+            <a class = "animacao" href="/"><img src="/assets/filmes/matrix.svg" alt=""></a>
+            <a href="/"><h2>Matrix</h2></a>
         </div>
         
-        <div class="filmesRec">
+        <div class="filmes-rec">
             <h1>5</h1>
-            <a class = "animacao" href=""><img src="/assets/filmes/Jogos Vorazes.webp" alt=""></a>
-            <a href=""><h2>Jogos Vorazes</h2></a>
+            <a class = "animacao" href="/"><img src="/assets/filmes/jogos-vorazes-esperanca-parte-um.svg" alt=""></a>
+            <a href="/"><h2>Jogos Vorazes</h2></a>
         </div>
 
-        <div class="filmesRec">
+        <div class="filmes-rec">
             <h1>6</h1>
-            <a class = "animacao" href=""><img src="/assets/filmes/Barbie.webp" alt=""></a>
-            <a href=""><h2>Barbie</h2></a>
+            <a class = "animacao" href="/"><img src="/assets/filmes/barbie.svg" alt=""></a>
+            <a href="/"><h2>Barbie</h2></a>
         </div>
 
         <div class = "seta">
-            <a class = "animacao" href=""><img src="/assets/Botões/seta.png" alt=""></a>
+            <a class = "animacao" href="/"><img src="/assets/botoes/seta.png" alt=""></a>
         </div>
+
     </div>
 
-    <H2 id="top3">Series Recentes</H2>
+    <H2 id="top">Séries Recentes</H2>
 
-    <div class="seriesRecentes">
+    <div class="series-recentes">
 
-
-        <div class="seriesRec">
+        <div class="series-rec">
             <h1>1</h1>
-            <a class = "animacao" href=""><img src="/assets/series/A queda de p.diddy.jpg" alt=""></a>
-            <a href=""><h2>A queda de P.Diddy</h2></a>
+            <a class = "animacao" href="/"><img src="/assets/series/queda-pdiddy.svg" alt=""></a>
+            <a href="/"><h2>A Queda de P.Diddy</h2></a>
         </div>
         
-        <div class="seriesRec">
+        <div class="series-rec">
             <h1>2</h1>
-            <a class = "animacao" href=""><img src="/assets/series/Dexter.webp" alt=""></a>
-            <a href=""><h2>Dexter</h2></a>
+            <a class = "animacao" href="/"><img src="/assets/series/dexter.svg" alt=""></a>
+            <a href="/"><h2>Dexter</h2></a>
         </div>
         
-        <div class="seriesRec">
+        <div class="series-rec">
             <h1>3</h1>
-            <a class = "animacao" href=""><img src="/assets/series/Friends.jpg" alt=""></a>
-            <a href=""><h2>Friends</h2></a>
+            <a class = "animacao" href="/"><img src="/assets/series/the-simpsons.svg" alt=""></a>
+            <a href="/"><h2>Os Simpsons</h2></a>
         </div>
 
-        <div class="seriesRec">
+        <div class="series-rec">
             <h1>4</h1>
-            <a class = "animacao" href=""><img src="/assets/series/The Office.webp" alt=""></a>
-            <a href=""><h2>The Office</h2></a>
+            <a class = "animacao" href="/"><img src="/assets/series/the-office.svg" alt=""></a>
+            <a href="/"><h2>The Office</h2></a>
         </div>
         
-        <div class="seriesRec">
+        <div class="series-rec">
             <h1>5</h1>
-            <a class = "animacao" href=""><img src="/assets/series/Jovem Sheldon.jpg" alt=""></a>
-            <a href=""><h2>Jovem Sheldon</h2></a>
+            <a class = "animacao" href=""><img src="/assets/series/invencivel.svg" alt=""></a>
+            <a href=""><h2>Invencível</h2></a>
         </div>
 
-        <div class="seriesRec">
+        <div class="series-rec">
             <h1>6</h1>
-            <a class = "animacao" href=""><img src="/assets/series/The Last Of us.jpg" alt=""></a>
-            <a href=""><h2>The Last of Us</h2></a>
+            <a class = "animacao" href="/"><img src="/assets/series/the-last-of-us.svg" alt=""></a>
+            <a href="/"><h2>The Last of Us</h2></a>
         </div>
 
         <div class ="seta">
-            <a class = "animacao" href=""><img src="/assets/Botões/seta.png" alt=""></a>
+            <a class = "animacao" href="/"><img src="/assets/botoes/seta.png" alt=""></a>
         </div>
+
     </div>
 
     <div class="footer">
-        <p>&copy;CopyRight - Apocaliflix</p>
+        <p>&copy;CopyRight - Apocaliflix 2025</p>
     </div>
+
 </body>
 </html>

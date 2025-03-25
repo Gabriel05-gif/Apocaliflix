@@ -32,7 +32,7 @@ body {
     margin: 0 auto;
     background-color: var(--principal);
     color: var(--cor-texto);
-    max-width: 1900px;
+    max-width: 1905px;
     font-family:geral ;
     animation: fadeIn 0.3s ease-in forwards;
 }
@@ -42,8 +42,11 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
-    padding: 20px 0 20px 30px;
-    height: 60px;
+}
+
+.logo img{
+    width: 200px;
+    padding-left: 40px;
 }
 
 .container-botoes-menu{
@@ -92,10 +95,16 @@ input{
     font-family:geral;
     font-weight: bold;
     font-size: 18px;
+    animation: fadeIn 0.3s ease-in;
+}
+
+input:hover{
+    background-color: var(--principal);
+    transition: 0.3s ease-in-out;
 }
 
 input::placeholder {
-    color:#ffffff88;
+    color:#ffffff88;    
 }
 
 #botao-perfil{
@@ -115,7 +124,9 @@ input::placeholder {
 }
 
 #filme-destaque > img{
-    width: 100%;  
+    width: 100%; 
+    opacity: 90%;
+    height: 750px; 
     object-fit: cover; 
     object-position: center;
     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);
@@ -186,10 +197,10 @@ input::placeholder {
 }
 
 .footer {
+    opacity: 50% ;
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    padding: 0px;
     background-color: var(--menu-footer);
-    font-size: 25px
+    font-size: 15px
 }

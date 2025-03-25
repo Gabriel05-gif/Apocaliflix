@@ -1,18 +1,21 @@
 @import url(global.css);
 
+body a{
+    color: #fff;
+}
+
 hr{
     position: absolute;
     width: 105px;
     top: 30px;
-    right: 283px;
+    right: 286.6px;
 }
 
-#top3{
+#top{
     font-size: 60px;
     margin: 0;
     padding: 30px 20px;
     font-weight: bold;
-    color: white;
 }
 
 .top{
@@ -21,94 +24,87 @@ hr{
     justify-content: center;
 }
 
-.filmesTop3 > a{
+.filmes-top > a{
     text-decoration: none;
     transition: transform 0.3s ease-in-out;
 
 }
 
-.filmesTop3  img{
+.filmes-top  img{
     position: relative;
     transition: transform 0.3s ease-in-out;
     object-fit: cover;
     height: 258px;
     width: 420px;
     border-radius: 10px;
-
-
 }
 
-.filmesTop3 > img:hover{
+.filmes-top > img:hover{
     transform: scale(1.05);
 }
 
-.filmesTop3{
+.filmes-top{
     position: relative;
 }
 
-.filmesTop3  h1{
+.filmes-top  h1{
     position: absolute;
     margin: 0;
-    color: white;
     font-size: 250px;
     font-weight: bold;
-    top: -41px;
+    top: -25px;
     left: -80px;
 }
 
-.filmesTop3 h2{
+.filmes-top h2{
     margin: 0;
-    color: white;
     font-weight: normal;
     font-size: 35px;
 }
 
-.filmesRecentes{
+.filmes-recentes{
     display: grid;
     position: relative;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.filmesRec > a{
+.filmes-rec > a{
     text-decoration: none;
 }
 
-.filmesRec > img{
+.filmes-rec > img{
     transition: transform 0.3s ease-in-out;
 }
 
-.filmesRec > img:hover{
+.filmes-rec > img:hover{
     transform: scale(1.05);
 }
 
-.filmesRec{
+.filmes-rec{
     padding:0px 20px 0px 110px;
     position: relative;
 }
 
 
-.filmesRec h1{
+.filmes-rec h1{
     margin: 0;
     position: absolute;
-    color: white;
     font-size: 210px;
     font-weight: bold;
     top: -30px;
     left: 40px;
 }
 
-.filmesRec  img{
-    width: 176px;
-    height: 180px;
+.filmes-rec img{
+    width: 92%;
     position: relative;
     border-radius: 10px;
     object-fit: cover; 
     object-position: center;
 }
 
-.filmesRec h2{
+.filmes-rec h2{
     margin: 0;
-    color: white;
     font-weight: normal;
     font-size: 25px;
 }
@@ -119,54 +115,48 @@ hr{
     top: 77px;
     left: 1875px;
     opacity: 0;
-    transition: opacity 100s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
 }
 
 .seta img:hover{
-    opacity: 1;
-
+    opacity: 100%;
 }
 
-
-.seriesRecentes{
+.series-recentes{
     display: grid;
     position: relative;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.seriesRec > a{
+.series-rec > a{
     text-decoration: none;
 }
 
-.seriesRec{
+.series-rec{
     padding:0px 0px 0px 110px;
     position: relative;
     width: 175px;
     height: 220px;
 }
 
-
-.seriesRec h1{
+.series-rec h1{
     margin: 0;
     position: absolute;
-    color: white;
     font-size: 210px;
     font-weight: bold;
     top: -30px;
     left: 40px;
 }
 
-.seriesRec  img{
-    width: 176px;
-    height: 180px;
+.series-rec  img{
+    width: 100%;
     position: relative;
     border-radius: 10px;
     object-position: center;
 }
 
-.seriesRec h2{
+.series-rec h2{
     margin: 0;
-    color: white;
     font-weight: normal;
     font-size: 25px;
 }
