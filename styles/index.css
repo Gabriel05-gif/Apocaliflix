@@ -109,19 +109,6 @@ hr{
     font-size: 25px;
 }
 
-.seta img{
-    position: absolute;
-    width: 20px;
-    top: 77px;
-    left: 1875px;
-    opacity: 0;
-    animation: fadeIn 0.3s ease-in-out;
-}
-
-.seta img:hover{
-    opacity: 100%;
-}
-
 .series-recentes{
     display: grid;
     position: relative;

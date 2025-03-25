@@ -67,7 +67,6 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-
 .botoes-menu:hover {
     transform: scale(1.1);
 }
