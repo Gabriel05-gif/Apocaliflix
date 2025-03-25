@@ -126,7 +126,7 @@ input::placeholder {
 #filme-destaque > img{
     width: 100%; 
     opacity: 90%;
-    height: 750px; 
+    height: 765px; 
     object-fit: cover; 
     object-position: center;
     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);
