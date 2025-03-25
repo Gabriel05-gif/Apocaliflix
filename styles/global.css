@@ -67,7 +67,6 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-
 .botoes-menu:hover {
     transform: scale(1.1);
 }
@@ -203,4 +202,14 @@ input::placeholder {
     margin-top: 40px;
     background-color: var(--menu-footer);
     font-size: 15px
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    transition: 0.2s ease-in-out;
+}
+
+.footer a:hover{
+    color: #ffffffad;
 }
