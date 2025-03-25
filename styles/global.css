@@ -195,7 +195,7 @@ input::placeholder {
     transition: 0.3s ease-in-out;
 }
 
-.footer {
+footer {
     opacity: 50% ;
     display: flex;
     justify-content: center;
@@ -204,12 +204,12 @@ input::placeholder {
     font-size: 15px
 }
 
-.footer a {
+footer a {
     text-decoration: none;
     color: var(--cor-texto);
     transition: 0.2s ease-in-out;
 }
 
-.footer a:hover{
+footer a:hover{
     color: #ffffffad;
 }
