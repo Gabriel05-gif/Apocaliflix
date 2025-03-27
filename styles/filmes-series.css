@@ -70,3 +70,10 @@ span {
 .imagens:hover {
   transform: scale(1.05);
 }
+
+.linha-serie{
+  position: absolute;
+  width: 105px;
+  top: 30px;
+  left: 280px;
+}
