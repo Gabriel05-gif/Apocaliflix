@@ -1,0 +1,8 @@
+@import url(global.css);
+
+hr {
+  position: absolute;
+  width: 105px;
+  top: 30px;
+  right: 138px;
+}
