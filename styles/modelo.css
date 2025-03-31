@@ -107,6 +107,7 @@ input::placeholder {
 #img-fundo > img{
   width: 100%; 
   opacity: 50%;
+}
 
 #filme-destaque > img{
   width: 100%; 
@@ -129,16 +130,12 @@ input::placeholder {
   font-weight: normal;
 }
 
-
-#ano{
-  width: 2px;
-}
-
 #descricao-original{
   position: absolute;
   top: 43px;
   left: 665px;
-  
+}
+
 #descricao-original{
   position: absolute;
   top: 288px;
@@ -166,7 +163,8 @@ input::placeholder {
   position: absolute;
   top: 390px;
   left: 500px;
-=======
+}
+
 #descricao-classificacao{
   position: absolute;
   width: 27px;
@@ -188,7 +186,8 @@ input::placeholder {
   position: absolute;
   top: 630px;
   left: 530px;
-=======
+}
+
 #botao-ir-para-filme {
   position: absolute;
   top: 630px;
