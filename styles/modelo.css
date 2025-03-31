@@ -1,7 +1,7 @@
 @import url(global.css);
 
-
-body {
+/* body {
+>>>>>>> main
     margin: 0 auto;
     background-color: var(--principal);
     color: var(--cor-texto);
@@ -89,7 +89,7 @@ input::placeholder {
     width: 80px;
     top: -17px;
     left: 280px ;
-}
+} */
 
 .serie-destaque{
     position: relative;
@@ -196,6 +196,7 @@ input::placeholder {
 
 #botao-assistir:hover{
     background-color: var(--principal);
+    color: var(--cor-texto);
     transition: 0.3s ease-in-out;
 }
 
@@ -216,6 +217,7 @@ input::placeholder {
 
 #botao-ver-trailer:hover{
     background-color: var(--principal);
+    color: var(--cor-texto);
     transition: 0.3s ease-in-out;
 }
 
