@@ -94,6 +94,20 @@ input::placeholder {
   position: relative;
 }
 
+
+#img-destaque > img{
+  position: absolute;
+  top: 70px;
+  left:50px;
+  width: 420px;
+  height: 45%;
+  border-radius: 15px;
+}
+
+#img-fundo > img{
+  width: 100%; 
+  opacity: 50%;
+
 #filme-destaque > img{
   width: 100%; 
   opacity: 90%;
@@ -105,6 +119,9 @@ input::placeholder {
 
 #descricao-logo{
   position: absolute;
+
+  top: 5px;
+  left: 500px;
   top: 250px;
   padding: 30px;
   font-size: 40px;
@@ -112,6 +129,16 @@ input::placeholder {
   font-weight: normal;
 }
 
+
+#ano{
+  
+}
+
+#descricao-original{
+  position: absolute;
+  top: 43px;
+  left: 665px;
+  
 #descricao-original{
   position: absolute;
   top: 288px;
@@ -123,6 +150,8 @@ input::placeholder {
   position: absolute;
   padding: 30px;
   top: 305px;
+
+  left: 500px;
   font-size: 40px;
 }
 
@@ -132,6 +161,12 @@ input::placeholder {
   top: 375px;
 }
 
+
+#descricao-sinopse{
+  position: absolute;
+  top: 390px;
+  left: 500px;
+=======
 #descricao-classificacao{
   position: absolute;
   width: 27px;
@@ -148,6 +183,12 @@ input::placeholder {
   width: 1100px;
 }
 
+
+#botao-ir-para {
+  position: absolute;
+  top: 630px;
+  left: 530px;
+=======
 #botao-ir-para-filme {
   position: absolute;
   top: 630px;
