@@ -207,12 +207,12 @@ input::placeholder {
 }
 
 footer {
-  opacity: 50%;
-  display: flex;
-  justify-content: center;
-  margin-top: 120px;
-  background-color: var(--menu-footer);
-  font-size: 15px;
+    opacity: 50% ;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    background-color: var(--menu-footer);
+    font-size: 15px
 }
 
 footer a {
