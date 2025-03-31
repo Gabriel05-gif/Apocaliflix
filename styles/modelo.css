@@ -94,9 +94,18 @@ input::placeholder {
   position: relative;
 }
 
-#filme-destaque > img{
+#img-destaque > img{
+  position: absolute;
+  top: 70px;
+  left:50px;
+  width: 420px;
+  height: 45%;
+  border-radius: 15px;
+}
+
+#img-fundo > img{
   width: 100%; 
-  opacity: 90%;
+  opacity: 50%;
   height: 765px; 
   object-fit: cover; 
   object-position: center;
@@ -105,17 +114,22 @@ input::placeholder {
 
 #descricao-logo{
   position: absolute;
-  top: 250px;
+  top: 5px;
+  left: 500px;
   padding: 30px;
   font-size: 40px;
   font-family: logo;
   font-weight: normal;
 }
 
+#ano{
+  
+}
+
 #descricao-original{
   position: absolute;
-  top: 288px;
-  left: 165px;
+  top: 43px;
+  left: 665px;
   padding: 30px;
 }
 
@@ -123,6 +137,7 @@ input::placeholder {
   position: absolute;
   padding: 30px;
   top: 305px;
+  left: 500px;
   font-size: 40px;
 }
 
@@ -132,26 +147,20 @@ input::placeholder {
   top: 375px;
 }
 
-#descricao-classificacao{
-  position: absolute;
-  width: 27px;
-  top: 424px;
-  left: 85px;
-}
-
 #descricao-sinopse{
   position: absolute;
   top: 390px;
+  left: 500px;
   color: var(--sinopse);
   padding: 30px;
   font-size: 30px;
   width: 1100px;
 }
 
-#botao-ir-para-filme {
+#botao-ir-para {
   position: absolute;
   top: 630px;
-  left: 30px;
+  left: 530px;
   text-decoration: none;
   color: var(--cor-texto);
   background-color: #ffffff46;
