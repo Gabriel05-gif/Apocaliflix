@@ -1,12 +1,5 @@
 @import url(global.css);
 
-hr {
-  position: absolute;
-  width: 105px;
-  top: 30px;
-  right: 138px;
-}
-
 #subtitulo-filmes {
   font-size: 60px;
   margin: 0;
@@ -67,11 +60,4 @@ span {
 
 .imagens:hover {
   transform: scale(1.05);
-}
-
-.linha-serie{
-  position: absolute;
-  width: 105px;
-  top: 30px;
-  left: 280px;
 }
