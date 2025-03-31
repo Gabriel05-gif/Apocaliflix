@@ -63,13 +63,19 @@ body {
   color: var(--cor-texto);
   font-weight: bold;
   width: 105px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 5px;
   transition: transform 0.3s ease-in-out;
 }
 
 .botoes-menu:hover {
   transform: scale(1.1);
+}
+
+hr {
+    margin: 0 0 0 5px;
+    grid-column: 1/-1;
 }
 
 .icones-botoes {

@@ -4,13 +4,6 @@ body a{
     color: #fff;
 }
 
-hr{
-    position: absolute;
-    width: 105px;
-    top: 30px;
-    right: 280px;
-}
-
 #top{
     font-size: 60px;
     margin: 0;
