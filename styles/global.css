@@ -1,5 +1,5 @@
 :root {
-  --principal: #270133;
+  --principal: #130119;
   --cor-texto: #fff;
   --menu-footer: #130119;
   --sinopse: #ffffffc5;
@@ -43,11 +43,14 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
+  height: 65px;
 }
 
 .logo img {
-  width: 200px;
+  width: 150px;
+  height: 65px;
   padding-left: 40px;
+  display: inline;
 }
 
 .container-botoes-menu {
@@ -96,11 +99,12 @@ input {
   background-color: #380349;
   border: none;
   padding: 10px 5px 10px 15px;
+  margin-left: 40px;
   border-radius: 23px;
   color: var(--cor-texto);
   font-family: geral;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 15px;
   animation: fadeIn 0.3s ease-in;
 }
 
@@ -113,15 +117,10 @@ input::placeholder {
   color: #ffffff88;
 }
 
-#botao-perfil {
-  position: absolute;
-  left: 260px;
-}
-
 #perfil {
   position: absolute;
-  width: 80px;
-  top: -17px;
+  width: 60px;
+  top: -10px;
   left: 280px;
 }
 

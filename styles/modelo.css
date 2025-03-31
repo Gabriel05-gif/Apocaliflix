@@ -147,14 +147,18 @@ textarea{
     border: none;
     border-radius: 10px;
     padding: 50px 50px;
-    font-size: 15px;
+    font-size: 20px;
     resize: none;
     outline: none;
+    color: var(--cor-texto);
 }
 
 textarea::placeholder{
     color: rgba(255, 255, 255, 0.486);
+    font-family: geral;
+    font-size: 20px;
 }
+
 #botao-publicar{
     position: absolute;
     top: 1150px;
