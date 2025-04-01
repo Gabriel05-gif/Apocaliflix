@@ -17,14 +17,14 @@
     position: absolute;
     width: 22%;
     height: 550px;
-    top: 60px;
+    top: 140px;
     left: 80px;
     border-radius: 10px;
 }
 
 #descricao-logo{
     position: absolute;
-    top: 10px;
+    top: 75px;
     left: 550px;
     font-size: 30px;
     font-family: logo;
@@ -33,34 +33,34 @@
 
 #descricao-original{
     position: absolute;
-    top: 30px;
+    top: 95px;
     left: 680px;
 }
 
 #descricao-ano{
     position: absolute;
-    top: 160px;
+    top: 240px;
     left: 582px;
     font-size: 15px;
 }
 
 #descricao-diretor-serie{
     position: absolute;
-    top: 200px;
+    top: 280px;
     left: 582px;
     font-size: 15px;
 }
 
 #descricao-elenco-serie{
     position: absolute;
-    top: 245px;
+    top: 320px;
     left: 582px;
     font-size: 15px;
 }
 
 #descricao-tipo{
     position: absolute;
-    top: 290px;
+    top: 370px;
     left: 582px;
     font-weight: normal;
     padding: 5px 10px;
@@ -73,14 +73,14 @@
 #descricao-titulo{
     position: absolute;
     padding: 30px;
-    top: 60px;
+    top: 130px;
     left: 550px;
     font-size: 35px;
 }
 
 #descricao-sinopse{
     position: absolute;
-    top: 310px;
+    top: 400px;
     left: 550px;
     color: var(--sinopse);
     padding: 30px;
@@ -90,7 +90,7 @@
 
 #botao-assistir {
     position: absolute;
-    top: 520px;
+    top: 635px;
     left: 578px;
     text-decoration: none;
     color: var(--menu-footer);
@@ -111,7 +111,7 @@
 
 #botao-ver-trailer {
     position: absolute;
-    top: 520px;
+    top: 635px;
     left: 890px;
     text-decoration: none;
     color: var(--menu-footer);
@@ -168,6 +168,12 @@ textarea::placeholder{
     background-color: white;
     text-decoration: none;
     color: var(--menu-footer);
+}
+
+#botao-publicar:hover{
+    background-color: var(--principal);
+    color: var(--cor-texto);
+    transition: 0.3s ease-in-out;
 }
 
 footer {

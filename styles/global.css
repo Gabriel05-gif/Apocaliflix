@@ -33,17 +33,24 @@ body {
   margin: 0 auto;
   background-color: var(--principal);
   color: var(--cor-texto);
-  max-width: 1905px;
+  max-width: 1900px;
   font-family: geral;
   animation: fadeIn 0.3s ease-in forwards;
 }
 
 .menu {
-  background-color: var(--menu-footer);
+  position: fixed;
+  z-index: 10000;
+  background-color: rgba(14, 1, 31, 0.301);
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 75%,
+    rgba(0, 0, 0, 0) 100%
+  );
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
-  height: 65px;
+  height: 85px;
 }
 
 .logo img {
@@ -67,7 +74,7 @@ body {
   font-weight: bold;
   width: 105px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 5px;
   transition: transform 0.3s ease-in-out;
 }
@@ -96,7 +103,7 @@ hr {
 }
 
 input {
-  background-color: #380349;
+  background-color: #3703492a;
   border: none;
   padding: 10px 5px 10px 15px;
   margin-left: 40px;
@@ -130,8 +137,8 @@ input::placeholder {
 
 #filme-destaque > img {
   width: 100%;
-  opacity: 90%;
-  height: 765px;
+  opacity: 80%;
+  height: 850px;
   object-fit: cover;
   object-position: center;
   -webkit-mask-image: linear-gradient(
