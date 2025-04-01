@@ -90,7 +90,7 @@
 
 #botao-assistir {
     position: absolute;
-    top: 635px;
+    top: 615px;
     left: 578px;
     text-decoration: none;
     color: var(--menu-footer);
@@ -111,7 +111,7 @@
 
 #botao-ver-trailer {
     position: absolute;
-    top: 635px;
+    top: 615px;
     left: 890px;
     text-decoration: none;
     color: var(--menu-footer);
