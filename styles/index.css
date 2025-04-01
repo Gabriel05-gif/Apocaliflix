@@ -4,13 +4,6 @@ body a{
     color: #fff;
 }
 
-hr{
-    position: absolute;
-    width: 105px;
-    top: 30px;
-    right: 280px;
-}
-
 #top{
     font-size: 60px;
     margin: 0;
@@ -81,22 +74,12 @@ hr{
 }
 
 .filmes-rec{
-    padding:0px 20px 0px 110px;
+    padding:0px 20px 0px 40px;
     position: relative;
 }
 
-
-.filmes-rec h1{
-    margin: 0;
-    position: absolute;
-    font-size: 210px;
-    font-weight: bold;
-    top: -37px;
-    left: 40px;
-}
-
 .filmes-rec img{
-    width: 92%;
+    width: 95%;
     position: relative;
     border-radius: 10px;
     object-fit: cover; 
@@ -120,23 +103,14 @@ hr{
 }
 
 .series-rec{
-    padding:0px 0px 0px 110px;
+    padding:0px 20px 0px 40px;
     position: relative;
     width: 175px;
     height: 220px;
 }
 
-.series-rec h1{
-    margin: 0;
-    position: absolute;
-    font-size: 210px;
-    font-weight: bold;
-    top: -37px;
-    left: 40px;
-}
-
 .series-rec  img{
-    width: 100%;
+    width: 140%;
     position: relative;
     border-radius: 10px;
     object-position: center;
@@ -154,4 +128,23 @@ hr{
 
 .animacao > img:hover{
     transform: scale(1.10);
+}
+
+footer {
+    opacity: 50% ;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    background-color: var(--menu-footer);
+    font-size: 15px
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--cor-texto);
+  transition: 0.2s ease-in-out;
+}
+
+footer a:hover {
+  color: #ffffffad;
 }
