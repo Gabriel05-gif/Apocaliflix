@@ -84,8 +84,8 @@ body {
 }
 
 hr {
-    margin: 0 0 0 5px;
-    grid-column: 1/-1;
+    margin: 0 0 0 4px;
+    grid-column: 1/-2;
 }
 
 .icones-botoes {
